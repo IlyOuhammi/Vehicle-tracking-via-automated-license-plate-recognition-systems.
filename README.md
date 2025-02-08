@@ -34,5 +34,5 @@ Ce notebook est conçu pour fine-tuner un modèle de reconnaissance de texte (OC
 🔹7- finetuning_yolov10.ipynb: 
 Ce code permet de télécharger les poids du modèle YOLOv10 et d'entraîner un modèle de détection d'objets. Il commence par cloner le dépôt YOLOv10 et installer les dépendances. Ensuite, il télécharge plusieurs fichiers de poids pré-entraînés. Après cela, il organise un jeu de données d'images et d'annotations en sous-dossiers pour l'entraînement, la validation et le test. Enfin, il configure un fichier YAML et lance l'entraînement du modèle YOLOv10 sur ces données.
 
-🔹9- app2.py:
+🔹8- app2.py:
 ce code utilise Streamlit pour créer une interface graphique. Lorsque l’utilisateur télécharge une vidéo dans l’interface, YOLO détecte la plaque, l’OCR extrait son contenu et le filtre de Kalman suit le véhicule. Les données (position, numéro de plaque) sont enregistrées instantanément et transformées par la suite en une vidéo de sortie que l’utilisateur peut télécharger. De plus, un fond personnalisé est ajouté à l'application à partir d'une image encodée en base64.
