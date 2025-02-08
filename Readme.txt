@@ -33,8 +33,4 @@ Ce notebook est conçu pour fine-tuner un modèle de reconnaissance de texte (OC
 🔹7- finetuning_yolov10.ipynb: 
 Ce code permet de télécharger les poids du modèle YOLOv10 et d'entraîner un modèle de détection d'objets. Il commence par cloner le dépôt YOLOv10 et installer les dépendances. Ensuite, il télécharge plusieurs fichiers de poids pré-entraînés. Après cela, il organise un jeu de données d'images et d'annotations en sous-dossiers pour l'entraînement, la validation et le test. Enfin, il configure un fichier YAML et lance l'entraînement du modèle YOLOv10 sur ces données.
 
-🔹8- backend.py:
-Ce code crée une API avec FastAPI pour traiter des vidéos. Lorsqu'un fichier vidéo est envoyé à l'endpoint `/process_video`, le code le lit, l'enregistre temporairement, et l'analyse avec OpenCV pour détecter les véhicules via la fonction `car_detect`. Si la vidéo est traitée avec succès, un message de réussite et les résultats de la détection sont renvoyés. En cas d'erreur, un gestionnaire d'exceptions renvoie un message d'erreur détaillé.
-
-🔹9- frontend.py:
-Ce code utilise Streamlit pour créer une interface utilisateur permettant de télécharger une vidéo et de l'envoyer à un serveur FastAPI pour le traitement. Lorsqu'une vidéo est téléchargée, elle est lue et envoyée à l'API via une requête POST pour détecter les véhicules et plaques. Une fois le traitement terminé, l'interface affiche la vidéo traitée, si elle existe, ou un message d'erreur si le fichier n'est pas trouvé. De plus, un fond personnalisé est ajouté à l'application à partir d'une image encodée en base64.
+🔹8- app2.py:
