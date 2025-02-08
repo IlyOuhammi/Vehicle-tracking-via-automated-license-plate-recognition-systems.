@@ -36,3 +36,5 @@ Ce code permet de télécharger les poids du modèle YOLOv10 et d'entraîner un 
 
 🔹8- app2.py:
 ce code utilise Streamlit pour créer une interface graphique. Lorsque l’utilisateur télécharge une vidéo dans l’interface, YOLO détecte la plaque, l’OCR extrait son contenu et le filtre de Kalman suit le véhicule. Les données (position, numéro de plaque) sont enregistrées instantanément et transformées par la suite en une vidéo de sortie que l’utilisateur peut télécharger. De plus, un fond personnalisé est ajouté à l'application à partir d'une image encodée en base64.
+🔹9- data annotation.ipynb:
+Ce code lit les annotations en arabe et remplace certaines lettres arabes par leurs équivalents latins définis dans un dictionnaire. Il applique cette transformation à la deuxième colonne du fichier et enregistre le résultat dans un fichier CSV.
